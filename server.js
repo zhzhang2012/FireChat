@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000));
 //app.use(express.static(__dirname + '/node-modules'))
 app.use(express.static(__dirname + '/app'))
 
-app.get('/', function(request, response) {
+app.get('/hello', function(request, response) {
   response.send('Hello World!')
 })
 
